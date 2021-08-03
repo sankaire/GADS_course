@@ -27,11 +27,11 @@ body{
 .userdata > span{
     padding: 10px;
 }
-.info{
+.input__area{
     color:rgb(3, 3, 19);
     font-size: larger;
 }
-.info > input[type=text]{
+.input__area > input[type=text]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
