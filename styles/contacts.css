@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+}
+.social__links{
+    display: flex;
+    background-color: aquamarine;
+    margin: 20px auto;
+    max-width: 700px;
+}
+.social__content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin:10px 20px;
+    padding: 5%;
+    width: 30%;
+}
+.social__content > a{
+    text-decoration: none;
+    padding: 20px;
+}
+.bi-instagram, 
+.bi-telephone, 
+.bi-facebook, 
+.bi-envelope{
+    color: black;
+    size: 10%;
+}
+section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: gray;
+}
+#userMessage{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    padding: 5%;
+    
+}
+.input__area > input[type=text], textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    
+}
+#submit{
+    width: 100px;
+    margin-left: 38%;
+    margin-bottom: 10px;
+    background-color: rgb(3, 3, 19); 
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
