@@ -12,29 +12,30 @@
     <div class="order__form">
         <img src="/images/logo.png"
         alt="company logo">
-        <form action="" class="userdata">
+        <form action="../index.html" class="userdata">
             <span class="input__area">
                 First Name
-                <input type="text" placeholder="First Name">
+                <input type="text" id="fname" placeholder="First Name">
             </span>
             <span class="input__area">
                 Last Name
-                <input type="text" placeholder="Second Name" >
+                <input type="text" id="sname" placeholder="Second Name" >
             </span>
             <span class="input__area">
                 Phone Number
-                <input type="text" placeholder="Phone Number">
+                <input type="text" id="phone" placeholder="Phone Number">
             </span>
             <span class="input__area">
                 City/town
-                <input type="text" placeholder="City/town">
+                <input type="text" id="city" placeholder="City/town">
             </span>
             <span class="input__area">
                 Apartment
-                <input type="text" placeholder="Apartment">
+                <input type="text" id="house" placeholder="Apartment">
             </span>
-            <input type="submit" class="btn">
+            <input type="submit" class="submit" onclick=" return formValidation()">
         </form>
     </div>
 </body>
+<script src="../scripts/main.js"></script>
 </html>
