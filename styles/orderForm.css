@@ -38,18 +38,18 @@ body{
     box-sizing: border-box;
     
 }
-.btn{
+.submit{
     width: 100px;
     margin-left: 38%;
     margin-bottom: 10px;
-    background-color: rgb(3, 3, 19); /* Green */
+    background-color: rgb(3, 3, 19); 
     border: none;
     color: white;
     text-decoration: none;
     font-size: 16px;
     padding: 10px;
 }
-.btn:hover{
+.submit:hover{
     cursor: pointer;
     background-color: indigo;
 }
