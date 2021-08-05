@@ -1,45 +1,56 @@
 *{
     margin: 0;
 }
+body{
+    background-color:rgb(3, 3, 19);
+}
 .social__links{
     display: flex;
-    background-color: aquamarine;
+    /* background-color:rgb(3, 3, 19); */
     margin: 20px auto;
     max-width: 700px;
 }
 .social__content{
-    background-color: white;
+    background-color:white;
+    opacity: 10;
     display: flex;
+    border: 2px solid white;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px 5px rgb(136, 133, 133);
     flex-direction: column;
     margin:10px 20px;
-    padding: 5%;
+    padding: 0;
     width: 30%;
 }
 .social__content > a{
     text-decoration: none;
-    padding: 20px;
+    padding: 50px;
+    color: orange;
 }
 .bi-instagram, 
 .bi-telephone, 
 .bi-facebook, 
 .bi-envelope{
-    color: black;
     size: 10%;
 }
 section{
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: gray;
+    background-color: orange;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px 5px rgb(136, 133, 133);
 }
 #userMessage{
     display: flex;
     flex-direction: column;
     margin-top:20px;
     padding: 5%;
+    color: rgb(134, 122, 122);
     
 }
 .input__area > input[type=text], textarea{
     width: 100%;
+    border: none;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
