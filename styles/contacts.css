@@ -12,14 +12,12 @@ body{
 }
 .social__content{
     background-color:white;
-    opacity: 10;
     display: flex;
     border: 2px solid white;
     border-radius: 10%;
     box-shadow: 5px 5px 5px 5px rgb(136, 133, 133);
     flex-direction: column;
     margin:10px 20px;
-    padding: 0;
     width: 30%;
 }
 .social__content > a{
@@ -27,12 +25,12 @@ body{
     padding: 50px;
     color: orange;
 }
-.bi-instagram, 
+/* .bi-instagram, 
 .bi-telephone, 
 .bi-facebook, 
 .bi-envelope{
     size: 10%;
-}
+} */
 section{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -62,8 +60,31 @@ section{
     margin-bottom: 10px;
     background-color: rgb(3, 3, 19); 
     border: none;
-    color: white;
+    color: rgb(161, 86, 86);
     text-decoration: none;
     font-size: 16px;
     padding: 10px;
+}
+@media only screen and (max-width:760px){
+    /* .contact__page{
+        display: block;
+        max-width: 100%;
+    } */
+    .social__content{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 70%;
+        padding: 50px;
+
+    }
+    .social__links{
+        display: inline-block;
+        text-align: center;
+        word-spacing: 10px;
+        
+    }
+    .social__links > a{
+        padding: none;
+    }
 }
