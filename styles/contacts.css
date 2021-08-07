@@ -65,26 +65,3 @@ section{
     font-size: 16px;
     padding: 10px;
 }
-@media only screen and (max-width:760px){
-    /* .contact__page{
-        display: block;
-        max-width: 100%;
-    } */
-    .social__content{
-        display: flex;
-        flex-direction: row;
-        margin: 0 auto;
-        width: 70%;
-        padding: 50px;
-
-    }
-    .social__links{
-        display: inline-block;
-        text-align: center;
-        word-spacing: 10px;
-        
-    }
-    .social__links > a{
-        padding: none;
-    }
-}
