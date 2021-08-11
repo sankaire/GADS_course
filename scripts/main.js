@@ -6,7 +6,7 @@ formValidation = () =>{
     var house = document.querySelector("#house").value
 
     if(fname == '' || fname == null){
-        alert("First name can not be blank")
+        window.prompt("fill empty spaces");
         return false
     }else if(sname == '' || sname == null){
         alert("second name can not be blank")
@@ -21,6 +21,7 @@ formValidation = () =>{
         alert("Apartment can not be empty")
         return false
     }else{
+        launchRocket();
         return true
     }
     
