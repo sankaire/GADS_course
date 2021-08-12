@@ -26,6 +26,19 @@ body{
     padding: 20px;
     
 }
+.feedback {
+    width: 100%;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    min-height: 3rem;
+}
+.alert-success{
+    background-color: green;
+}
+.alert-error{
+    background-color: red;
+}
 .social__content > a{
     text-decoration: none;
     text-align: center;
