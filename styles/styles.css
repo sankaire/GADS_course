@@ -3,6 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.page-content{
+    flex-grow: 1;
+}
+.feedback {
+    width: 100%;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    min-height: 3rem;
+}
+.alert-success{
+    background-color: green;
+}
+.alert-error{
+    background-color: red;
+}
 header{
     background-color: black;
     height: 80px;
@@ -38,20 +60,18 @@ header{
     padding: 15px;
     color: white;
 }
-article{
+.home__page{
     width: 100%;
-    height: 100%;
-    background-color: rgb(12, 1, 1);
+    display: flex;
+    color: black;
+    flex-direction: column;
 }
 h1{
     text-align: center;
     color: white;
     padding: 10px;
 }
-article > img{
-    margin-top: 10px;
-    margin-left: 19%;
-}
+
 footer{
     background-color: black;
     color: white;
@@ -61,4 +81,39 @@ footer{
     bottom: 0;
     width: 100%;
     height: auto; 
+}
+/* media Queries */
+
+@media only screen and (max-width:760px){
+    .banner{
+        width: 100%;
+        border-radius: 10%;
+    }
+    .home__page{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        max-width: 80%;
+        margin: 0 auto;
+        border: 2px solid grey;
+        border-radius: 10%;
+        padding: 10px;
+    }
+    .sub-title, h1{
+        color: black;
+        text-align: center;
+        margin-left: 0;
+    }
+    footer{
+        background-color: white;
+        color: black;
+        bottom: 0;
+    }
+    .fa-bars{
+        color: white;
+    }
+    
+    body{
+        background-color: black;
+    }
 }
