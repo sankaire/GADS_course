@@ -82,6 +82,126 @@ footer{
     width: 100%;
     height: auto; 
 }
+/* contact page styling */
+
+.contact__page{
+    display: flex;
+    max-width: 760px;
+    height: auto;
+    margin: 20px auto;
+    justify-content: space-evenly;
+}
+.social__links{
+    background-color: white; 
+    width: 30%; 
+    height: 300px;
+    margin-top: 15%;
+    margin-right: 20px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px 5px rgb(136, 133, 133);
+}
+.social__content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.feedback {
+    width: 100%;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    min-height: 3rem;
+}
+.alert-success{
+    background-color: green;
+}
+.alert-error{
+    background-color: red;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    
+}
+.social__content > a{
+    text-decoration: none;
+    text-align: center;
+    color: blue;
+    padding: 20px;
+}
+/* contact form */
+.contact__form{
+    background-color: blue;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px 5px rgb(136, 133, 133);
+
+}
+#userMessage{
+    display: flex;
+    flex-direction: column;
+    margin-top:0px;
+    padding: 5%;
+    color: rgb(134, 122, 122);
+    
+
+}
+.input__area{
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+.input__area > [type=text], textarea{
+    width: 100%;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#userMessage > span{
+    text-align: center;
+    color: white;
+}
+#submit{
+    width: 100px;
+    margin-left: 38%;
+    margin-bottom: 10px;
+    background-color: rgb(3, 3, 19); 
+    border: none;
+    color: rgb(161, 86, 86);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+/* media quaries */
+
+@media only screen and (max-width:760px){
+    .contact__page{
+        display: flex;
+        flex-direction: column;
+    }
+    .social__links{
+        display: flex;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        margin: 10px;
+    }
+    .social__content{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px;
+        flex-direction: row;
+    }
+    .contact__form{
+        width: auto;
+        margin: 15px;
+    }
+}
+
 /* media Queries */
 
 @media only screen and (max-width:760px){
