@@ -29,12 +29,24 @@ const form = document.querySelector("form");
 const feedback = document.querySelector(".feedback");
 form.addEventListener('submit',e=>{
     e.preventDefault()
-    feedback.innerHTML = `<div class="alert-error">
+    // feedback.innerHTML = `<div class="alert-error">
+    //     <p>Form data submitted</p>
+    //     </div>`
+    // setTimeout(feedbackCLose, 3000)
+    if(form !== ''){
+        feedback.innerHTML = `<div class = "alert-success">
+        <p>form data submitted</p>
+        </div>`
+        setTimeout(feedbackCLose, 3000)
+    }else{
+        feedback.innerHTML = `<div class="alert-error">
         <p>Form data submitted</p>
         </div>`
-    setTimeout(feedbackCLose, 3000)
+        setTimeout(feedbackCLose, 3000)
+    }
+    function feedbackCLose () {
+        feedback.innerHTML = ''
+    }
 })
 
-function feedbackCLose () {
-    feedback.innerHTML = ''
-}
+
