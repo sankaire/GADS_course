@@ -6,7 +6,7 @@ formValidation = () =>{
     var house = document.querySelector("#house").value
 
     if(fname == '' || fname == null){
-        window.prompt("fill empty spaces");
+        alert("First name can't be empty")
         return false
     }else if(sname == '' || sname == null){
         alert("second name can not be blank")
@@ -21,32 +21,31 @@ formValidation = () =>{
         alert("Apartment can not be empty")
         return false
     }else{
-        launchRocket();
         return true
     } 
 }
-const form = document.querySelector("form");
-const feedback = document.querySelector(".feedback");
-form.addEventListener('submit',e=>{
-    e.preventDefault()
-    // feedback.innerHTML = `<div class="alert-error">
-    //     <p>Form data submitted</p>
-    //     </div>`
-    // setTimeout(feedbackCLose, 3000)
-    if(form !== ''){
-        feedback.innerHTML = `<div class = "alert-success">
-        <p>form data submitted</p>
-        </div>`
-        setTimeout(feedbackCLose, 3000)
-    }else{
-        feedback.innerHTML = `<div class="alert-error">
-        <p>Form data submitted</p>
-        </div>`
-        setTimeout(feedbackCLose, 3000)
-    }
-    function feedbackCLose () {
-        feedback.innerHTML = ''
-    }
-})
+// const form = document.querySelector("form");
+// const feedback = document.querySelector(".feedback");
+// form.addEventListener('submit',e=>{
+//     e.preventDefault()
+//     // feedback.innerHTML = `<div class="alert-error">
+//     //     <p>Form data submitted</p>
+//     //     </div>`
+//     // setTimeout(feedbackCLose, 3000)
+//     if(form !== ''){
+//         feedback.innerHTML = `<div class = "alert-success">
+//         <p>form data submitted</p>
+//         </div>`
+//         setTimeout(feedbackCLose, 3000)
+//     }else{
+//         feedback.innerHTML = `<div class="alert-error">
+//         <p>Form data submitted</p>
+//         </div>`
+//         setTimeout(feedbackCLose, 3000)
+//     }
+//     function feedbackCLose () {
+//         feedback.innerHTML = ''
+//     }
+// })
 
 
