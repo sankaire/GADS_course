@@ -296,6 +296,26 @@ body{
     cursor: pointer;
     background-color: indigo;
 }
+/* order succes note styling */
+.success-note{
+    display: flex;
+    background-color: green;
+    opacity: 0.8;
+    padding: 2%;
+    width: 50%;
+    margin: 18% auto;
+    justify-content: space-evenly;
+    
+}
+.fa-check{
+    font-size: 64px;
+    color: violet;
+}
+.success-text{
+    margin-top: 18px;
+    color: white;
+    font-weight: 200;
+}
 /* media quaries */
 
 @media only screen and (max-width:760px){
