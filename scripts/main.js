@@ -24,7 +24,7 @@ formValidation = () =>{
         return true
     } 
 }
-// const form = document.querySelector("form");
+// const form = document.querySelector("form"
 // const feedback = document.querySelector(".feedback");
 // form.addEventListener('submit',e=>{
 //     e.preventDefault()
