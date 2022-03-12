@@ -1,9 +1,9 @@
 formValidation = () =>{
-    var fname = document.querySelector("#fname").value
-    var sname = document.querySelector("#sname").value 
-    var phone = document.querySelector("#phone").value
-    var city = document.querySelector("#city").value
-    var house = document.querySelector("#house").value
+    let fname = document.querySelector("#fname").value
+    let sname = document.querySelector("#sname").value 
+    let phone = document.querySelector("#phone").value
+    let city = document.querySelector("#city").value
+    let house = document.querySelector("#house").value
 
     if(fname == '' || fname == null){
         alert("First name can't be empty")
